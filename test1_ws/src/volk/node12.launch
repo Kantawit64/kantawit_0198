@@ -1,0 +1,18 @@
+<launch>
+
+	
+	<arg name = "text" default = "Hello class"/>
+    	
+  	
+	<node name="Node1" pkg="volk" type="node1.py" output="screen">
+		<param name = "text" value = "$(arg text)"/>	
+	</node>
+
+	<node name="Node2" pkg="volk" type="node2.py" output="screen">
+	</node>
+
+
+</launch>
+
+
+
